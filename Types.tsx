@@ -7,5 +7,7 @@ export type EventProps = {
   participant: string; //make a type for dat
   typeOfEvent: string;
   ImageOfEvent: string;
-  Images: string[];
+  Images: {
+    url: string;
+  }[];
 }[];

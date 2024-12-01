@@ -21,7 +21,7 @@ const navLinks = [
 
 const Nav = () => {
   return (
-    <div className=" w-full  fixed border-b bg-background border-b-black/25 top-0 left-0 flex items-center justify-center">
+    <div className=" w-full  fixed border-b bg-background z-50 border-b-black/25 top-0 left-0 flex items-center justify-center">
       <div className=" max-w-screen-lg w-full flex items-center justify-between py-2 px-3.5">
         <div>
           <LOGO />
