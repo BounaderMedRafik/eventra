@@ -1,14 +1,11 @@
-import EventsWeek from "@/components/Marketing/EventsWeek";
-import Hero from "@/components/Marketing/Hero";
-import React from "react";
+import Hero from "@/components/core/Hero";
+import EventsWeek from "@/components/core/WeekEvents";
 
-const Home = () => {
+export default function Home() {
   return (
     <div>
       <Hero />
       <EventsWeek />
     </div>
   );
-};
-
-export default Home;
+}

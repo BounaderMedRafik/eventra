@@ -4,10 +4,11 @@ export type EventProps = {
   desc: string;
   date: string;
   location: string;
-  participant: string; //make a type for dat
+  participant: {
+    name: string;
+    category: string;
+  }[];
   typeOfEvent: string;
   ImageOfEvent: string;
-  Images: {
-    url: string;
-  }[];
+  Images: string[];
 }[];
