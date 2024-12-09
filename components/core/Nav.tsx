@@ -1,6 +1,6 @@
 "use client";
 import { events } from "@/db/data";
-import { ArrowUpRight, Search, User } from "lucide-react";
+import { ArrowUpRight, Menu, Search, User } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Button, buttonVariants } from "../ui/button";
@@ -16,6 +16,12 @@ import { usePathname } from "next/navigation";
 import EVENTRA from "./brand/EVENTRA";
 import { MdOutlineAdminPanelSettings } from "react-icons/md";
 import { FaHandHoldingHeart } from "react-icons/fa";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 
 const navLinks = [
   {
@@ -56,14 +62,14 @@ const Nav = () => {
   };
 
   return (
-    <div className=" w-full fixed top-0 left-0  py-5 z-50 flex items-center justify-center">
-      <div className=" max-w-4xl bg-background w-full mx-auto flex items-center justify-between border px-4 py-1.5 rounded-md ">
+    <div className=" w-full fixed top-0 left-0  md:py-5 py-0 z-50 flex items-center justify-center">
+      <div className=" max-w-4xl bg-background w-full mx-auto flex items-center justify-between border px-4 py-1.5 md:rounded-md rounded-none ">
         <div className=" font-semibold text-sm opacity-75  cursor-default">
           <EVENTRA />
         </div>
 
         <div className="flex items-center gap-0.5">
-          <div className=" px-4">
+          <div className=" hidden md:flex px-4">
             {getNavLinks().map((item, i) => (
               <Link
                 key={i}
@@ -76,6 +82,9 @@ const Nav = () => {
                 {item.title}
               </Link>
             ))}
+          </div>
+          <div className=" block md:hidden">
+            <NavMobile role={role} />
           </div>
           {path != "/signup" && (
             <div>
@@ -121,7 +130,7 @@ const Nav = () => {
 
 export const SearchComponent = ({ type }: { type: "long" | "button" }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredEvents, setFilteredEvents] = useState(events);
+  const [filteredEvents, setFilteredEvents] = useState(events.slice(-3));
 
   const handleSearch = (event: {
     target: {
@@ -213,6 +222,42 @@ export const SearchComponent = ({ type }: { type: "long" | "button" }) => {
         </DialogContent>
       </Dialog>
     </>
+  );
+};
+
+const NavMobile = ({ role }: { role: string }) => {
+  const getNavLinks = () => {
+    if (role === "normal") {
+      return navLinks;
+    } else if (role === "participant") {
+      return [
+        ...navLinks,
+        { title: "Participant Area", href: "/participant-area" },
+      ];
+    } else {
+      return [...navLinks, { title: "Dashboard", href: "/dashboard" }];
+    }
+  };
+
+  return (
+    <div>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant={"outline"} size={"icon"}>
+            <Menu size={13} />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          {getNavLinks().map((item, i) => (
+            <div key={i}>
+              <DropdownMenuItem>
+                <Link href={item.href}>{item.title}</Link>
+              </DropdownMenuItem>
+            </div>
+          ))}
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
   );
 };
 

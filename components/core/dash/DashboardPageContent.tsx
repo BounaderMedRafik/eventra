@@ -24,8 +24,8 @@ const DashboardPageContent = () => {
 
   return (
     <div>
-      <div className=" max-w-screen-lg mx-auto pt-24 pb-10 ">
-        <div className=" flex items-center justify-between">
+      <div className=" max-w-screen-lg mx-auto pt-24 pb-10 p-5 pb-44 ">
+        <div className=" flex flex-col md:flex-row items-start md:items-center justify-between">
           <div>
             <div className=" text-2xl font-semibold  font-mono">Dashboard</div>
             <div className=" text-xs  opacity-75 max-w-96 mb-6">
@@ -55,7 +55,7 @@ const DashboardPageContent = () => {
           <div className=" text-sm opacity-75">
             Events you currently Participated in
           </div>
-          <div className=" grid grid-cols-2 gap-4 mt-4">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {participatedEvents.map((item, i) => (
               <div key={i}>
                 <div className=" hover:opacity-75 transition-all duration-300 ">

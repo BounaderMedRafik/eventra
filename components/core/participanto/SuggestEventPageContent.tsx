@@ -13,7 +13,7 @@ const SuggestEventPageContent = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto pt-24">
+    <div className="max-w-lg p-5 pb-44 mx-auto pt-24">
       <div className="flex items-center justify-between">
         <div>
           <div className="text-2xl font-semibold font-mono">

@@ -201,4 +201,91 @@ export const events: EventProps = [
       "https://images.pexels.com/photos/4626350/pexels-photo-4626350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ],
   },
+
+  {
+    id: "tree-day",
+    title: "Tree Day",
+    desc: "A day dedicated to planting and caring for trees.",
+    date: "2025-04-30",
+    location: "Various locations worldwide",
+    participant: [
+      {
+        name: "Jane Goodall",
+        category: "Environmental Activist",
+      },
+      {
+        name: "David Suzuki",
+        category: "Environmental Scientist",
+      },
+      {
+        name: "Greta Thunberg",
+        category: "Climate Activist",
+      },
+    ],
+    typeOfEvent: "Environmental",
+    ImageOfEvent:
+      "https://adminassets.devops.arabiaweather.com/sites/default/files/field/image/Arbor-day-3-1.jpg",
+    Images: [
+      "https://www.daysoftheyear.com/wp-content/uploads/national-love-a-tree-day-e1714864268549.jpg",
+      "https://www.farmersalmanac.com/wp-content/uploads/2020/07/Earth-Day-Arbor-Day-History-i813059638.jpeg",
+      "https://www.arborday.org/sites/arborday.org/files/styles/embed_large/public/media/2024-10/allianceforcommunitytrees_hero_cta-featured_miami_1648x1280.jpg.webp",
+    ],
+  },
+  {
+    id: "yennayer-jan-12",
+    title: "Yennayer Jan 12",
+    desc: "Celebration of the Amazigh New Year.",
+    date: "2025-01-12",
+    location: "North Africa and Amazigh communities worldwide Museum",
+    participant: [
+      {
+        name: "Amazigh Musician Idir",
+        category: "Musician",
+      },
+      {
+        name: "Fatima Tabaamrant",
+        category: "Singer",
+      },
+      {
+        name: "Mohammed Choukri",
+        category: "Author",
+      },
+    ],
+    typeOfEvent: "Cultural",
+    ImageOfEvent:
+      "https://observalgerie.com/wp-content/uploads/2022/01/yennayer-1-1980x1200.jpg",
+    Images: [
+      "https://www.liberte-algerie.com/storage/images/article/d_a37807c14e2b9b24006b2cb825ccd674.jpg",
+      "https://www.lejourdalgerie.com/wp-content/uploads/2023/01/une110122.jpg",
+    ],
+  },
+  {
+    id: "mothers-day",
+    title: "Mother's Day",
+    desc: "A day to honor mothers and mother figures.",
+    date: "2025-05-12",
+    location: "Cultural Center Alg Center",
+    participant: [
+      {
+        name: "Oprah Winfrey",
+        category: "Media Personality",
+      },
+      {
+        name: "Michelle Obama",
+        category: "Former First Lady",
+      },
+      {
+        name: "Maya Angelou",
+        category: "Poet and Author",
+      },
+    ],
+    typeOfEvent: "Celebration",
+    ImageOfEvent:
+      "https://cdn.shopify.com/s/files/1/1532/8239/files/v2-acix7-yp12p_600x600.jpg?v=1713004345",
+    Images: [
+      "https://www.daysoftheyear.com/wp-content/uploads/happy-mother-s-day-2021-08-27-22-12-32-utc-scaled.jpg",
+      "https://ideas.shutterfly.com/wp-content/uploads/2022/05/Featured-image-of-mother-reading-a-Mothers-day-card-with-quotes-from-her-son.jpg",
+      "https://4kinderteachers.com/wp-content/uploads/2021/07/mothers-day-activities-1024x1024.jpg",
+    ],
+  },
 ];

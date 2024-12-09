@@ -6,8 +6,8 @@ import React from "react";
 
 const ParticipantPageContent = () => {
   return (
-    <div className=" max-w-screen-lg mx-auto pt-24 ">
-      <div className=" flex items-center justify-between">
+    <div className=" max-w-screen-lg p-5 pb-44 mx-auto pt-24 ">
+      <div className=" flex flex-col md:flex-row items-start md:items-center justify-between">
         <div>
           <div className=" text-2xl font-semibold  font-mono">
             Participation Area
@@ -39,7 +39,7 @@ const ParticipantPageContent = () => {
         <div className=" text-sm opacity-75">
           Events you currently Participated in
         </div>
-        <div className=" grid grid-cols-2 gap-4 mt-4">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {events
             .slice(2)
             .reverse()

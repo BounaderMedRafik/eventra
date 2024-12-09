@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutPageContent = () => {
   return (
-    <div className=" mt-24 max-w-screen-md mx-auto">
+    <div className=" p-5 md:p-0 mt-24 max-w-screen-md mx-auto">
       <About />
     </div>
   );

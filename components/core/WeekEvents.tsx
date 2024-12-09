@@ -15,15 +15,15 @@ const EventsWeek = () => {
   return (
     <div
       id="EventsWeek"
-      className="min-h-[90vh] flex items-center justify-center overflow-hidden rounded-3xl"
+      className="min-h-[90vh] pb-44 flex items-center justify-center overflow-hidden rounded-3xl p-5"
     >
-      <Carousel className=" rounded-xl w-[70%] ">
-        <div className="flex items-center justify-between">
+      <Carousel className=" rounded-xl md:w-[70%] w-full ">
+        <div className="flex mb-4 flex-col  md:flex-row items-start md:items-center justify-between">
           <div>
-            <div className=" text-2xl font-semibold  font-mono">
+            <div className=" md:text-2xl text-base font-semibold  font-mono">
               Events Of The Week
             </div>
-            <div className=" text-sm  opacity-75 max-w-96 mb-6">
+            <div className=" text-xs md:text-sm  opacity-75 max-w-96 mb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               quod possimus distinctio magni!
             </div>

@@ -12,7 +12,7 @@ const CreatingEventPageContent = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto pt-24">
+    <div className="max-w-lg mx-auto pt-24 pb-44 p-5">
       <div className="flex items-center justify-between">
         <div>
           <div className="text-2xl font-semibold font-mono">

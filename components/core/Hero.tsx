@@ -5,11 +5,11 @@ import { SearchComponent } from "./Nav";
 
 const Hero = () => {
   return (
-    <div className=" min-h-[70vh] flex items-center justify-center flex-col bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] ">
+    <div className=" min-h-[70vh] p-5 pt-14 flex items-center justify-center flex-col bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] ">
       <div className=" text-3xl  font-semibold">
         <span className=" text-primary">Eventra</span>: All events In One Place
       </div>
-      <div className=" text-xs mt-2 opacity-75 max-w-lg text-center">
+      <div className=" text-xs text-start mt-2 opacity-75 max-w-lg md:text-center">
         Eventra is a one-stop-shop for all your event management needs. It
         offers a comprehensive suite of services to help you plan, execute, and
         promote your events.

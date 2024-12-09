@@ -23,7 +23,7 @@ const SingularEventPageContent = ({ id }: { id: string }) => {
   }
 
   return (
-    <div className="max-w-screen-lg pt-24 mx-auto px-4">
+    <div className="max-w-screen-lg pt-24 mx-auto px-4 pb-64">
       <div className="w-full h-96 mb-6">
         <img
           src={theEvent.ImageOfEvent}
@@ -31,9 +31,9 @@ const SingularEventPageContent = ({ id }: { id: string }) => {
           className="w-full h-full object-cover rounded-lg"
         />
       </div>
-      <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold ">{theEvent.title}</h1>
-        <div className="flex items-center gap-0.5">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
+        <h1 className="md:text-3xl text-base font-bold ">{theEvent.title}</h1>
+        <div className="flex -mt-7 mb-8 items-center gap-0.5">
           <PARTICAPATION />
           <RESERVATION />
         </div>
